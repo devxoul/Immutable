@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Yet'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Not yet implemented functions in Swift.'
   s.homepage         = 'https://github.com/devxoul/Yet'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

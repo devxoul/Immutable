@@ -40,7 +40,7 @@ Not yet implemented functions in Swift. This library is tiny but you must be loo
 * **Using Carthage**:
 
     ```
-    github "devxoul/Yet" ~> 0.1
+    github "devxoul/Yet" ~> 0.2
     ```
 
 * **Using Swift Package Manager**:
