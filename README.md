@@ -1,5 +1,9 @@
 # Yet
 
+![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
+[![Build Status](https://travis-ci.org/devxoul/Yet.svg?branch=master)](https://travis-ci.org/devxoul/Yet)
+[![CocoaPods](http://img.shields.io/cocoapods/v/Yet.svg)](https://cocoapods.org/pods/Yet)
+
 Not yet implemented functions in Swift. This library is tiny but you must be looking for somebody to make this open sourced library 😛
 
 ## Features
