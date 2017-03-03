@@ -25,5 +25,5 @@ extension Dictionary {
   public func flatMap<T, U>(_ transform: (Key, Value) throws -> (T, U)?) rethrows -> [T: U] where T: Hashable {
     return Dictionary<T, U>(elements: try self.flatMap(transform))
   }
-  
+
 }
