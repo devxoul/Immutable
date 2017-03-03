@@ -2,5 +2,6 @@ import XCTest
 @testable import YetTests
 
 XCTMain([
-     testCase(YetTests.allTests),
+     testCase(DictionaryTests.allTests),
+     testCase(FilterNilTests.allTests),
 ])
