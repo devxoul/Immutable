@@ -31,3 +31,11 @@ extension Dictionary where Value: _OptionalType {
     }
   }
 }
+
+public func filterNil<T>(_ array: [T?]) -> [T] {
+  return array.filterNil()
+}
+
+public func filterNil<K, V>(_ dictionary: [K: V?]) -> [K: V] {
+  return dictionary.filterNil()
+}
