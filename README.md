@@ -1,8 +1,8 @@
-# Yet
+# Immutable
 
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
-[![Build Status](https://travis-ci.org/devxoul/Yet.svg?branch=master)](https://travis-ci.org/devxoul/Yet)
-[![CocoaPods](http://img.shields.io/cocoapods/v/Yet.svg)](https://cocoapods.org/pods/Yet)
+[![Build Status](https://travis-ci.org/devxoul/Immutable.svg?branch=master)](https://travis-ci.org/devxoul/Immutable)
+[![CocoaPods](http://img.shields.io/cocoapods/v/Immutable.svg)](https://cocoapods.org/pods/Immutable)
 
 Not yet implemented functions in Swift. This library is tiny but you must be looking for somebody to make this open sourced library 😛
 
@@ -34,13 +34,13 @@ Not yet implemented functions in Swift. This library is tiny but you must be loo
 * **Using CocoaPods**:
 
     ```ruby
-    pod 'Yet'
+    pod 'Immutable'
     ```
 
 * **Using Carthage**:
 
     ```
-    github "devxoul/Yet" ~> 0.2
+    github "devxoul/Immutable" ~> 0.2
     ```
 
 * **Using Swift Package Manager**:
@@ -50,7 +50,7 @@ Not yet implemented functions in Swift. This library is tiny but you must be loo
       name: "MyAwesomeProject",
       targets: [],
       dependencies: [
-        .Package(url: "https://github.com/devxoul/Yet.git", majorVersion: 0)
+        .Package(url: "https://github.com/devxoul/Immutable.git", majorVersion: 0)
       ]
     )
     ```
@@ -67,4 +67,4 @@ Use `$ swift generate-xcodeproj` to generate Xcode project for development.
 
 ## License
 
-Yet is under MIT license. See the [LICENSE](LICENSE) for more info.
+Immutable is under MIT license. See the [LICENSE](LICENSE) for more info.

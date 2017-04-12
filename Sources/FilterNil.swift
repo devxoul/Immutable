@@ -1,6 +1,6 @@
 //
 //  FilterNil.swift
-//  Yet
+//  Immutable
 //
 //  Created by Suyeol Jeon on 03/03/2017.
 //

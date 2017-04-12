@@ -1,13 +1,13 @@
 //
 //  FilterNilTests.swift
-//  Yet
+//  Immutable
 //
 //  Created by Suyeol Jeon on 03/03/2017.
 //
 //
 
 import XCTest
-import Yet
+import Immutable
 
 class FilterNilTests: XCTestCase {
 

@@ -1,5 +1,5 @@
 import XCTest
-@testable import YetTests
+@testable import ImmutableTests
 
 XCTMain([
      testCase(DictionaryTests.allTests),
