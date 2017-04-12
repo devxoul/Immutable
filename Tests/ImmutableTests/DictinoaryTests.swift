@@ -45,6 +45,15 @@ class DictionaryTests: XCTestCase {
     XCTAssertEqual(result["C"], "6")
   }
 
+  func testUpdatingValue() {
+    XCTAssertEqual(["a": 10].updatingValue(20, forKey: "b"), ["a": 10, "b": 20])
+    XCTAssertEqual(["a": 10].updatingValue(20, forKey: "a"), ["a": 20])
+  }
+
+  func testRemovingValue() {
+    XCTAssertEqual(["a": 10].removingValue(forKey: "a"), [:])
+  }
+
 
   static var allTests : [(String, (DictionaryTests) -> () throws -> Void)] {
     return [

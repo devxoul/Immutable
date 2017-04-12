@@ -7,7 +7,6 @@
 //
 
 extension Dictionary {
-
   /// Initialize dictionary with a collection of key-value tuples.
   public init<C>(elements: C) where C: Collection, C.Iterator.Element == (Key, Value) {
     self.init()
@@ -26,4 +25,17 @@ extension Dictionary {
     return Dictionary<T, U>(elements: try self.flatMap(transform))
   }
 
+  /// Returns a new dictionary by updating a value for key.
+  public func updatingValue(_ value: Value, forKey key: Key) -> Dictionary {
+    var copy = self
+    copy.updateValue(value, forKey: key)
+    return copy
+  }
+
+  /// Returns a new dictionary by removing a value for key.
+  public func removingValue(forKey key: Key) -> Dictionary {
+    var copy = self
+    copy.removeValue(forKey: key)
+    return copy
+  }
 }
