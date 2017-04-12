@@ -4,30 +4,13 @@
 [![Build Status](https://travis-ci.org/devxoul/Immutable.svg?branch=master)](https://travis-ci.org/devxoul/Immutable)
 [![CocoaPods](http://img.shields.io/cocoapods/v/Immutable.svg)](https://cocoapods.org/pods/Immutable)
 
-Not yet implemented functions in Swift. This library is tiny but you must be looking for somebody to make this open sourced library 😛
+Missing immutable functions in Swift. You must be looking for somebody to make this library 😛
 
 ## Features
 
-* `Dictionary.map()` and `Dictionary.flatMap()` which returns `Dictionary`.
-
-    ```swift
-    let dict: [String: Int] = ["a": 1, "b": 2, "c": 3]
-    let result = dict.map { key, value in
-      return (key, value * 2)
-    }
-    print(result) // ["a": 2, "b": 4, "c": 6]
-    ```
-
-* `filterNil()` on `Collection` and `Dictionary`.
-
-    ```swift
-    let dict: [String: Any?] = [
-      "some": 123,
-      "none": nil,
-    ]
-    let result = dict.filterNil()
-    print(result) // ["some": 123]
-    ```
+* Non-mutating `appending()`, `inserting()`, `removing()` functions in `Collection`
+* `map()` and `flatMap()` for `Dictionary`
+* `filterNil()` for `Collection` and `Dictionary`
 
 ## Installation
 
