@@ -54,6 +54,11 @@ class DictionaryTests: XCTestCase {
     XCTAssertEqual(["a": 10].removingValue(forKey: "a"), [:])
   }
 
+  func testMergingValues() {
+    XCTAssertEqual(["a": 10, "b": 20].merging(["b": 30, "c": 40]),
+                   ["a": 10, "b": 30, "c": 40])
+  }
+
 
   static var allTests : [(String, (DictionaryTests) -> () throws -> Void)] {
     return [

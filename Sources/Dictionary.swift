@@ -38,4 +38,11 @@ extension Dictionary {
     copy.removeValue(forKey: key)
     return copy
   }
+
+  /// returns a new directory by merging all values for respective keys.
+  public func merging(_ dictionary: Dictionary<Key, Value>) -> Dictionary<Key, Value> {
+    var copy = self
+    dictionary.forEach { copy.updateValue($1, forKey: $0) }
+    return copy
+  }
 }
