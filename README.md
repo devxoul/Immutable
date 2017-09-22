@@ -1,6 +1,6 @@
 # Immutable
 
-![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)
 [![Build Status](https://travis-ci.org/devxoul/Immutable.svg?branch=master)](https://travis-ci.org/devxoul/Immutable)
 [![CocoaPods](http://img.shields.io/cocoapods/v/Immutable.svg)](https://cocoapods.org/pods/Immutable)
 
@@ -23,7 +23,7 @@ Missing immutable functions in Swift. You must be looking for somebody to make t
 * **Using Carthage**:
 
     ```
-    github "devxoul/Immutable" ~> 0.2
+    github "devxoul/Immutable"
     ```
 
 * **Using Swift Package Manager**:
