@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Immutable'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'Not yet implemented functions in Swift.'
   s.homepage         = 'https://github.com/devxoul/Immutable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
