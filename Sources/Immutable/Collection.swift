@@ -56,6 +56,22 @@ extension RangeReplaceableCollection {
     return copy
   }
 
+  /// Returns a new collection by removing all elements that satisfy the given predicate.
+  public func removingAll(where predicate: (Self.Iterator.Element) throws -> Bool) rethrows -> Self {
+    var copy = self
+    try copy.removeAll(where: predicate)
+    return copy
+  }
+
+  /// Returns a new collection by removing first element that satisfies the given predicate.
+  public func removingFirst(where predicate: (Self.Iterator.Element) throws -> Bool) rethrows -> Self {
+    var copy = self
+    if let i = try firstIndex(where: predicate) {
+      copy.remove(at: i)
+    }
+    return copy
+  }
+
   /// Returns a new collection by replacing given subrange with new elements.
   public func replacingSubrange<C>(_ subrange: Range<Self.Index>, with newElements: C) -> Self where C : Collection, C.Iterator.Element == Self.Iterator.Element {
     var copy = self

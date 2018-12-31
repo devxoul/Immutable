@@ -26,6 +26,8 @@ final class CollectionTests: XCTestCase {
     XCTAssertEqual([1, 2, 3].removingAll(), [])
     XCTAssertEqual([1, 2, 3].removingFirst(), [2, 3])
     XCTAssertEqual([1, 2, 3].removingFirst(2), [3])
+    XCTAssertEqual([1, 2, 3].removingAll(where: { $0 < 3 }), [3])
+    XCTAssertEqual([1, 2, 3].removingFirst(where: { $0 < 3 }), [2, 3])
   }
 
   func testReplacing() {
