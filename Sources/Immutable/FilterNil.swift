@@ -20,7 +20,7 @@ extension Optional: _OptionalType {
 extension Collection where Iterator.Element: _OptionalType {
   /// Returns nil-excluded array.
   public func filterNil() -> [Iterator.Element._Wrapped] {
-    return self.flatMap { $0.flatMap { $0 } }
+    return self.compactMap { $0.flatMap { $0 } }
   }
 }
 

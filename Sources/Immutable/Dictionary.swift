@@ -22,7 +22,7 @@ extension Dictionary {
 
   /// `flatMap()` that returns `Dictionary`.
   public func flatMap<T, U>(_ transform: (Key, Value) throws -> (T, U)?) rethrows -> [T: U] where T: Hashable {
-    return Dictionary<T, U>(elements: try self.flatMap(transform))
+    return Dictionary<T, U>(elements: try self.compactMap(transform))
   }
 
   /// Returns a new dictionary by updating a value for key.
